@@ -11,3 +11,6 @@
 # avoid ssh keys slipping off to public access
 id_rsa
 id_rsa.pub
+
+# ignore installed local packages
+/node_modules/
