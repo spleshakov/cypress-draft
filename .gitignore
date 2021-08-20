@@ -1,0 +1,13 @@
+# ignore IDE files
+/.project
+/.pydevproject
+.idea/*
+.vscode/*
+
+# ignore MacOS files
+**/.DS_Store
+.DS_Store
+
+# avoid ssh keys slipping off to public access
+id_rsa
+id_rsa.pub
