@@ -1,0 +1,5 @@
+{
+  "baseUrl": "https://www.aristamd.com/",
+  "testFiles": "cypress/specs/*.spec.js",
+  "integrationFolder": "."
+}
