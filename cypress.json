@@ -1,5 +1,7 @@
 {
   "baseUrl": "https://www.aristamd.com/",
   "testFiles": "cypress/specs/*.spec.js",
-  "integrationFolder": "."
+  "integrationFolder": ".",
+  "viewportWidth": 1920,
+  "viewportHeight": 1080
 }
