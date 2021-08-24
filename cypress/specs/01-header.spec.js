@@ -1,8 +1,14 @@
 import {Header} from "../component-objects/header";
 
-describe('My First Test', () => {
-	it('Pass!', async () => {
+describe('Header test suite', () => {
+
+	before(() => {
 		cy.visit('/');
+	})
+
+	// TODO rename
+	it('Pass!', async () => {
+
 		let header = new Header();
 		// Header
 		header.navigateTo('Resource Center', 'Blog')

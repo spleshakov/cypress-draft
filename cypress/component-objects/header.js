@@ -10,6 +10,7 @@ export class Header {
 		this._menu = menuLabel => `#menu-primary-top-navigation > li > a:contains(${menuLabel})`;
 		this._submenu = (menuLabel, submenuLabel) => `#menu-primary-top-navigation > li > a:contains(${menuLabel}) + ul a:contains(${submenuLabel})`;
 		this._homeLogo = 'img[src*="aristamd-logo"]';
+		this._requestDemo = 'a[href="/request-demo/"]';
 	}
 
 	/**
@@ -35,5 +36,12 @@ export class Header {
 	 */
 	goHome() {
 		cy.get(this._homeLogo).filter(':visible').click();
+	}
+
+	/**
+	 * click request demo
+	 */
+	requestDemo() {
+		cy.get(this._requestDemo).filter(':visible').click();
 	}
 }
