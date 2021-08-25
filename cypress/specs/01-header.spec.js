@@ -7,7 +7,7 @@ describe('Header test suite', () => {
 		cy.visit('/');
 	})
 
-	it('Navigation: About Us -> Who We Are', async () => {
+	it('Navigation: About Us -> Who We Are', () => {
 		cy.get('.et_pb_slides')
 			.should(
 				'exist'
@@ -28,7 +28,7 @@ describe('Header test suite', () => {
 			)
 	})
 
-	it('Navigation: Contact Us', async () => {
+	it('Navigation: Contact Us', () => {
 
 		header.navigateTo('Contact Us');
 
@@ -39,7 +39,7 @@ describe('Header test suite', () => {
 			)
 	})
 
-	it('Navigation: home page redirection by AristaMD logo', async () => {
+	it('Navigation: home page redirection by AristaMD logo', () => {
 
 		header.goHome();
 
@@ -49,7 +49,7 @@ describe('Header test suite', () => {
 			)
 	})
 
-	it('Request Demo button', async () => {
+	it('Request Demo button', () => {
 
 		header.navigateTo('Request Demo');
 
