@@ -10,7 +10,7 @@ export class Header {
 		this._menu = menuLabel => `#menu-primary-top-navigation > li > a:contains(${menuLabel})`;
 		this._submenu = (menuLabel, submenuLabel) => `#menu-primary-top-navigation > li > a:contains(${menuLabel}) + ul a:contains(${submenuLabel})`;
 		this._homeLogo = 'img[src*="aristamd-logo"]';
-		this._requestDemo = 'a[href="/request-demo/"]';
+		this._requestDemo = '.et_pb_sticky_module a[href="/request-demo/"]';
 	}
 
 	/**

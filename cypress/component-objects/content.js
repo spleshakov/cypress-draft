@@ -8,5 +8,6 @@ export class Content {
 	 */
 	constructor() {
 		this._slidesBanner = '.et_pb_slides';
+		this._pageHeader = '.header-content h1';
 	}
 }

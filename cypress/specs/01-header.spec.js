@@ -23,11 +23,7 @@ describe('Header test suite', () => {
 				'not.exist'
 			)
 
-		// TODO in case of how I structured the files now,
-		//  I should continue storing locators on the component level (as example above content._slidesBanner)
-		//  but I also want to demo the use of aliases
-		cy.get('.header-content h1')
-			.as('pageHeader')
+		cy.get(content._pageHeader)
 			.should(
 				'have.text',
 				'Who We Are'
@@ -38,7 +34,7 @@ describe('Header test suite', () => {
 
 		header.navigateTo('Contact Us');
 
-		cy.get('@pageHeader')
+		cy.get(content._pageHeader)
 			.should(
 				'have.text',
 				'Contact Us'
@@ -57,9 +53,9 @@ describe('Header test suite', () => {
 
 	it('Request Demo button', () => {
 
-		header.navigateTo('Request Demo');
+		header.requestDemo();
 
-		cy.get('@pageHeader')
+		cy.get(content._pageHeader)
 			.should(
 				'have.text',
 				'Request an eConsult Demo'
