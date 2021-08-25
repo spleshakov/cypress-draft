@@ -8,7 +8,11 @@ export class Footer {
 	 */
 	constructor() {
 		this._searchInput = '[role="search"] [type="text"]';
-		this._searchButton = '[role="search"] [type="submit"]'
+		this._searchButton = '[role="search"] [type="submit"]';
+		this._aristaMDLogo = '[src*="aristamd-white.png"]';
+		this._ourSolutions = 'h3:contains(OUR SOLUTION)';
+		this._company = 'h3:contains(COMPANY)';
+		this._resources = 'h3:contains(RESOURCES)';
 	}
 
 	/**

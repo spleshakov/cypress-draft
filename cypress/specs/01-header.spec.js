@@ -1,4 +1,4 @@
-import {Header} from "../component-objects/header";
+import {Header} from '../component-objects/header';
 let header = new Header();
 
 describe('Header test suite', () => {

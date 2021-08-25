@@ -21,7 +21,7 @@ export class Header {
 	 */
 	navigateTo(menuLabel, submenuLabel) {
 
-		if (!menuLabel) throw new Error ('Missing menuLabel argument in navigateTo function')
+		if (!menuLabel) throw new Error('Missing menuLabel argument in navigateTo function')
 
 		if (!!submenuLabel) {
 			cy.get(this._menu(menuLabel)).trigger('mouseover');
