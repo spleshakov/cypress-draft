@@ -1,5 +1,8 @@
 import {Header} from '../component-objects/header';
+import {Content} from "../component-objects/content";
+
 let header = new Header();
+let content = new Content();
 
 describe('Header test suite', () => {
 
@@ -8,18 +11,21 @@ describe('Header test suite', () => {
 	})
 
 	it('Navigation: About Us -> Who We Are', () => {
-		cy.get('.et_pb_slides')
+		cy.get(content._slidesBanner)
 			.should(
 				'exist'
 			)
 
 		header.navigateTo('About Us', 'Who We Are');
 
-		cy.get('.et_pb_slides')
+		cy.get(content._slidesBanner)
 			.should(
 				'not.exist'
 			)
 
+		// TODO in case of how I structured the files now,
+		//  I should continue storing locators on the component level (as example above content._slidesBanner)
+		//  but I also want to demo the use of aliases
 		cy.get('.header-content h1')
 			.as('pageHeader')
 			.should(
@@ -43,7 +49,7 @@ describe('Header test suite', () => {
 
 		header.goHome();
 
-		cy.get('.et_pb_slides')
+		cy.get(content._slidesBanner)
 			.should(
 				'exist'
 			)
