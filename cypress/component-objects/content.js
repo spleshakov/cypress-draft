@@ -1,5 +1,5 @@
 /**
- * HomePage component object
+ * component object for the main content of the page
  */
 export class Content {
 
@@ -9,6 +9,4 @@ export class Content {
 	constructor() {
 		this._slidesBanner = '.et_pb_slides';
 	}
-
-
 }
